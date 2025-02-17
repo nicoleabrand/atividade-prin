@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Livros, Alunos, Emprestimos
+from .models import Livro, Aluno, Emprestimo
 # Register your models here.
 
-admin.site.register(Alunos)
-admin.site.register(Livros)
-admin.site.register(Emprestimos)
+admin.site.register(Aluno)
+admin.site.register(Livro)
+admin.site.register(Emprestimo)

@@ -1,18 +1,18 @@
 from django.shortcuts import render
 
 from rest_framework.viewsets import ModelViewSet
-from .models import Livros, Emprestimos, Alunos
-from .serializers import LivrosSerializer, EmprestimosSerializer, AlunosSerializer
+from .models import Livro, Emprestimo, Aluno
+from .serializers import LivroSerializer, EmprestimoSerializer, AlunoSerializer
 
 class LivrosViewSet(ModelViewSet):
-    queryset = Livros.objects.all()
-    serializer_class = LivrosSerializer
+    queryset = Livro.objects.all()
+    serializer_class = LivroSerializer
 
 class EmprestimosViewSet(ModelViewSet):
-    queryset = Emprestimos.objects.all()
-    serializer_class = EmprestimosSerializer
+    queryset = Emprestimo.objects.all()
+    serializer_class = EmprestimoSerializer
 
 class AlunosViewSet(ModelViewSet):
-    queryset = Alunos.objects.all()
-    serializer_class = AlunosSerializer
+    queryset = Aluno.objects.all()
+    serializer_class = AlunoSerializer
 # Create your views here.

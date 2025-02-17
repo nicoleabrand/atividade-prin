@@ -1,17 +1,17 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Alunos, Livros, Emprestimos
+from .models import Aluno, Livro, Emprestimo
 
-class AlunosSerializer(ModelSerializer):
+class AlunoSerializer(ModelSerializer):
     class Meta:
-        model = Alunos
+        model = Aluno
         fields = '__all__'
 
-class LivrosSerializer(ModelSerializer):
+class LivroSerializer(ModelSerializer):
     class Meta:
-        model = Livros
+        model = Livro
         fields = '__all__'
 
-class EmprestimosSerializer(ModelSerializer):
+class EmprestimoSerializer(ModelSerializer):
     class Meta:
-        model = Emprestimos
+        model = Emprestimo
         fields = '__all__'
